@@ -71,7 +71,7 @@ export const Checkout = () => {
         const headers = { "Content-Type": "application/json" };
 
         try {
-            const response = await fetch("http://localhost:8000/api/create-checkout-session", {
+            const response = await fetch("https://buyer-ecommerce.onrender.com/api/create-checkout-session", {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify(body)
