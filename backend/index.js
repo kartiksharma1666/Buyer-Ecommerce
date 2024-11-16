@@ -14,6 +14,7 @@ const addressRoutes=require('./routes/Address')
 const reviewRoutes=require("./routes/Review")
 const wishlistRoutes=require("./routes/Wishlist")
 const { connectToDB } = require("./database/db")
+const checkoutSessionRoute = require('./controllers/checkoutSession');
 
 
 // server init
@@ -42,6 +43,7 @@ server.use("/reviews",reviewRoutes)
 server.use("/wishlist",wishlistRoutes)
 const chatbotRouter = require('./routes/chatbot');
 server.use('/api/chatbot', chatbotRouter);
+server.use('/api', checkoutSessionRoute);
 
 
 

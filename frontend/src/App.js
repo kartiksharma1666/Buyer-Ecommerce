@@ -11,6 +11,7 @@ import { useFetchLoggedInUserDetails } from "./hooks/useAuth/useFetchLoggedInUse
 import { AddProductPage, AdminOrdersPage, CartPage, CheckoutPage, ForgotPasswordPage, HomePage, LoginPage, OrderSuccessPage, OtpVerificationPage, ProductDetailsPage, ProductUpdatePage, ResetPasswordPage, SignupPage, UserOrdersPage, UserProfilePage, WishlistPage } from './pages';
 import { AdminDashboardPage } from './pages/AdminDashboardPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import  AdminHome  from './features/admin/components/AdminHome';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
           loggedInUser?.isAdmin?(
             // admin routes
             <>
+            <Route path='/admin' element={<Navigate to="/admin/home" />} /> {/* Redirect to AdminHome */}
+            <Route path='/admin/Home' element={<Protected><AdminHome/></Protected>}/>
             <Route path='/admin/dashboard' element={<Protected><AdminDashboardPage/></Protected>}/>
             <Route path='/admin/product-update/:id' element={<Protected><ProductUpdatePage/></Protected>}/>
             <Route path='/admin/add-product' element={<Protected><AddProductPage/></Protected>}/>

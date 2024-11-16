@@ -1,0 +1,439 @@
+/* .about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #f1f1f1 50%, #00615f 50%); 
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh; 
+    border-top: 2px solid #00615f ;
+}
+.about-text-section {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.about-main-heading {
+    font-size: 1.5rem;
+    color: #ff7973;
+    padding: 30px 13px 13px 13px;
+    margin: 0;
+
+}
+
+.about-sub-heading {
+    font-size: 2.5rem;
+    color: #00615f;
+    padding: 0;
+    margin: 0;
+
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.about-image-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-image {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+} */
+
+.about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #00615f 35%, #f1f1f1 65%); 
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh; 
+    border-top: 2px solid #00615f ;
+    overflow-x: hidden;
+  }
+  
+  .about-text-section {
+    max-width: 800px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .about-main-heading {
+    font-size: 1.5rem;
+    color: #fffb9b;
+    padding: 30px 13px 13px 13px;
+    margin: 0;
+  
+  }
+  
+  .about-sub-heading {
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+  
+  
+  .about-image-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .about-image {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* WHY USE BUDGETBITES SECTION */
+  .why-use-section {
+    text-align: center;
+    padding-top: 90px;
+  }
+  
+  .why-use-heading {
+    font-size: 1.7rem;
+    color: #00615f;
+    /* margin-bottom: 10px; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .why-use-subheading {
+    font-size: 2.5rem;
+    color: #ff7973;
+    margin: 5px 0 20px 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .why-use-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+  }
+  
+  .why-use-points-left, .why-use-points-right {
+    width: 25%;
+    color: #00615f;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+  }
+  
+  .why-use-points-left p, .why-use-points-right p {
+    margin-bottom: 20px; 
+  }
+  .why-use-image-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .why-use-image {
+    max-width: 27rem;
+    width: 100%;
+    height: 28rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slide-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .business-solutions {
+    padding: 110px 30px 140px 30px;
+    background-color: #f0f0f0; /* Light background for the section */
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .first-section {
+    text-align: center;
+    margin-bottom: 40px; /* Spacing between the sections */
+  }
+  
+  .main-heading-b {
+    /* font-size: 1.5rem; */
+    color:#ff7973;
+    margin-bottom: 0px;
+  
+  }
+  
+  .sub-heading-b {
+    font-size: 2.8rem;
+    color: #00615f; /* Darker color for the subheading */
+    margin: 10px 0;
+    font-weight: bolder;
+  }
+  
+  .description-b {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for the paragraph */
+    max-width: 600px;
+    padding-top: 0.5rem;
+    margin: 0 auto; /* Center the paragraph */
+  }
+  
+  .second-section {
+    display: flex;
+    justify-content: space-between; /* Space between boxes */
+    margin: 0 -10px; /* Adjust margins for full-width boxes */
+  }
+  
+  .box {
+    flex: 1; /* Allow boxes to grow equally */
+    margin: 0 10px; /* Spacing between boxes */
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ffffff; /* White background for the boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 97, 95, 0.3); /* Teal shadow effect */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .box-heading {
+    font-size: 1.5rem;
+    color: #00615f; /* Your primary color */
+  }
+  
+  .box-description {
+    font-size: 1rem;
+    color: #444; /* Darker color for the description */
+  }
+  
+  .food-waste-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: linear-gradient(to bottom, #00615f 33%, #f1f1f1 20%); 
+    padding: 50px 20px;
+    text-align: center; 
+    overflow-x: hidden;
+  }
+  
+  .food-waste-heading {
+    font-size: 2em; 
+    margin-bottom: 10px; 
+    color: #fffb9b;
+  }
+  
+  .food-waste-paragraph {
+    font-size: 1.2em; 
+    margin-bottom: 20px;
+    max-width: 600px; 
+    color: #f1f1f1;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    padding-top: 35px;
+    margin-bottom:2rem;
+  }
+  .image-container img{
+    width:30rem;
+  }
+  
+  .food-waste-image {
+    width: 100vw; 
+    height: auto; 
+    
+  }
+  
+  
+  .home-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Horizontal layout */
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #012a28, #008080); /* Gradient background */
+    color: white; /* Text color */
+    margin-top: 1px;
+    padding-bottom: 6rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .left-div {
+    flex: 1; /* Takes up half of the container */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    /* padding: 15px;  */
+  }
+  
+  .right-div {
+    flex: 1; /* Takes up half of the container */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .heading0 {
+    /* font-size: 2.5rem;  */
+    margin-bottom: 10px; /* Spacing below */
+    color: #fffb9b;
+  }
+  
+  .heading {
+    font-size: 2rem; /* Size for the first part of the main heading */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .heading2 {
+    font-size: 2rem; /* Size for the second part of the main heading */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .action-button {
+    margin-top: 1.5rem;
+    margin-left: 10px; /* Space between buttons */
+    padding: 8px 16px; /* Padding for buttons */
+    border: 2px solid #fff ;
+    margin-right: 1rem;
+    border-radius: 2px; /* Rounded corners for buttons */
+    background-color: transparent; /* Green background for buttons */
+    color: white; /* White text color */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: bold;
+    font-size: 13px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .action-button:hover {
+    color: #67d695; 
+    border: 2px solid #67d695;
+  }
+  
+  .home-image {
+    /* max-width: 100%;  */
+    width:39rem;
+    height: 21rem; /* Maintain aspect ratio */
+    display: block; /* Ensure image takes up the block space */
+  }
+  
+  /* .navbar {
+      position: sticky; 
+      top: 0; 
+  
+      background: linear-gradient(to bottom, #003e3b, #00615f);
+      padding: 10px 20px; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+      display: flex; 
+      align-items: center; 
+      z-index: 1000; 
+      width: 100%; 
+      overflow-x: hidden;
+    } */
+  
+    .navbar{
+      background: linear-gradient(to bottom, #004c4a, #00615f); /* Your gradient background */
+      padding: 10px 20px; /* Padding for the navbar */
+      position: sticky; /* Makes the navbar sticky */
+      display: flex; 
+      align-items: center;
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 1000; /* Ensure it's above other elements */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a nicer look */
+    }
+    
+    .nav-links ul {
+      list-style: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+      display: flex; /* Align links in a row */
+      margin-left: 12rem;
+    }
+    
+    .nav-links ul li {
+      margin-right: 20px; /* Space between list items */
+  
+    }
+    
+    .nav-links ul li a {
+      text-decoration: none; /* Remove underline from links */
+      color:#fff ;
+      cursor: pointer;
+      font-size: 14.5px;
+      padding: 0 1rem 0 1rem;
+      font-weight: bold; /* Medium font weight */
+      transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .nav-links ul li a:hover {
+      color: #67d695; /* Change color on hover */
+    }
+    
+   .nav-logo img{
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      margin-left: 2rem;
+    }
+    
+    .nav-right {
+      display: flex; /* Align buttons in a row */
+      align-items: center; /* Center items vertically */
+      /* padding-right: 10rem; */
+      margin-left: 5.5rem;
+      font-weight: bold;
+    }
+    
+    .btn-nav{
+      margin-left: 10px; /* Space between buttons */
+      padding: 8px 16px; /* Padding for buttons */
+      border: 2px solid #fff ;
+      margin-right: 1rem;
+      border-radius: 2px; /* Rounded corners for buttons */
+      background-color: transparent; /* Green background for buttons */
+      color: white; /* White text color */
+      cursor: pointer; /* Change cursor to pointer */
+      font-weight: bold;
+      font-size: 13px;
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .btn-nav:hover {
+      color: #67d695; 
+      border: 2px solid #67d695;
+    }

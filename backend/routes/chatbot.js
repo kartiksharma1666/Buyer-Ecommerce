@@ -13,6 +13,7 @@ const faqs = [
 
 router.post('/', async (req, res) => {
     const { message } = req.body;
+    console.log('Received message:', message);
 
     try {
         // Check for FAQ answers

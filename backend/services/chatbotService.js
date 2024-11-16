@@ -1,9 +1,12 @@
 // services/chatbotService.js
 const axios = require('axios');
+require('dotenv').config();
+
 
 async function getChatbotResponse(message) {
     const apiKey = process.env.OPENAI_API_KEY;
     const apiUrl = 'https://api.openai.com/v1/chat/completions';
+    console.log("open api key",apiKey);
 
     try {
         const response = await axios.post(apiUrl, {

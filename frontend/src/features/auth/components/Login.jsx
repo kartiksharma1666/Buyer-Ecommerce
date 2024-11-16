@@ -22,14 +22,18 @@ export const Login = () => {
   const is480=useMediaQuery(theme.breakpoints.down(480))
   
   // handles user redirection
-  useEffect(()=>{
-    if(loggedInUser && loggedInUser?.isVerified){
-      navigate("/")
+  useEffect(() => {
+    if (loggedInUser) {
+      if (loggedInUser.isAdmin) {
+        navigate("/admin/Home"); // Redirect to AdminHome page
+      } else if (loggedInUser.isVerified) {
+        navigate("/"); // Redirect to regular user home page
+      } else {
+        navigate("/verify-otp"); // Redirect to OTP verification
+      }
     }
-    else if(loggedInUser && !loggedInUser?.isVerified){
-      navigate("/verify-otp")
-    }
-  },[loggedInUser])
+  }, [loggedInUser]);
+  
 
   // handles login error and toast them
   useEffect(()=>{
