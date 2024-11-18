@@ -26,6 +26,10 @@ export const Login = () => {
 
   // handles user redirection
   useEffect(() => {
+    // if (!loggedInUser) {
+    //   navigate("/signup");
+    //   return; // Stop further execution if the user is not logged in
+    // }
     if (loggedInUser) {
       if (loggedInUser.isAdmin) {
         navigate("/admin/Home"); // Redirect to AdminHome page

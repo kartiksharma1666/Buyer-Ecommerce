@@ -23,6 +23,7 @@ export const Signup = () => {
 
   // handles user redirection
   useEffect(() => {
+    console.log("inside signup page", loggedInUser)
     if (loggedInUser) {
       navigate("/");
     }
